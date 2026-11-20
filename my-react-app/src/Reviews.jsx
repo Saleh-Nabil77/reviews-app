@@ -33,7 +33,19 @@ function Reviews() {
     }
 
     if (editingId !== null) {
-      // the PUT code will go here (next step)
+      fetch("http://localhost:3000/reviews/" + editingId, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ author: author, comment: comment, rating: Number(rating) })
+      })
+        .then(res => res.json())
+        .then(updated => {
+          setReviews(reviews.map(r => (r.id === updated.id ? updated : r)));
+          setAuthor("");
+          setComment("");
+          setRating("");
+          setEditingId(null);
+        });
       return;
     }
 
@@ -57,7 +69,7 @@ function Reviews() {
       <input value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
       <input value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Comment" />
       <input value={rating} onChange={(e) => setRating(e.target.value)} placeholder="Rating (1-5)" />
-      <button onClick={addReview}>Add</button>
+      <button onClick={addReview}>{editingId !== null ? "Save" : "Add"}</button>
       <ul>
         {reviews.map(r => (
           <li key={r.id}>

@@ -6,7 +6,7 @@ A small full-stack app to manage product reviews. I built it while learning full
 - Show all reviews
 - Add a review (validation in React and on the server)
 - Delete a review
-- Edit a review: the server route (PUT) is done, and the React side is being finished
+- Edit a review (the form switches to Save while editing)
 
 ## Tech
 - Back-end: Node.js, Express, CORS (folder `reviews-api`)
