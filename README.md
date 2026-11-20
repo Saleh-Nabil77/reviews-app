@@ -1,16 +1,16 @@
 # Reviews App (React + Node/Express)
 
-A small full-stack app to manage product reviews. I built it while learning full-stack development.
+A small full-stack app to manage product reviews. I built it while learning full-stack development, and the repository also keeps my small React practice components.
 
 ## Features
 - Show all reviews
 - Add a review (validation in React and on the server)
-- Edit a review (PUT)
 - Delete a review
+- Edit a review: the server route (PUT) is done, and the React side is being finished
 
 ## Tech
 - Back-end: Node.js, Express, CORS (folder `reviews-api`)
-- Front-end: React with Vite, `useState`, `useEffect`, `fetch` (folder `my-react-app`, being added)
+- Front-end: React with Vite, `useState`, `useEffect`, `fetch` (folder `my-react-app`)
 
 ## How to run the server
 ```
@@ -19,6 +19,14 @@ npm install
 node server.js
 ```
 The server runs on http://localhost:3000
+
+## How to run the React app
+```
+cd my-react-app
+npm install
+npm run dev
+```
+Note: `package.json` and `index.html` of the React app are being added in the next commit.
 
 ## API
 - `GET    /reviews`
@@ -29,4 +37,4 @@ The server runs on http://localhost:3000
 
 ## Notes
 - Data is kept in server memory for now, so it resets when the server restarts. Next step: add a database.
-- The React front-end will be added in the next commit.
+- `my-react-app/src` also contains practice components (Counter, WorldList, Drill) and a small Study Tracker.
