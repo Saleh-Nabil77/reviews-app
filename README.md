@@ -26,7 +26,7 @@ cd my-react-app
 npm install
 npm run dev
 ```
-Note: `package.json` and `index.html` of the React app are being added in the next commit.
+The React app runs on http://localhost:5173 and needs the server running on port 3000.
 
 ## API
 - `GET    /reviews`
