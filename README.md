@@ -37,4 +37,4 @@ The React app runs on http://localhost:5173 and needs the server running on port
 
 ## Notes
 - Data is kept in server memory for now, so it resets when the server restarts. Next step: add a database.
-- `my-react-app/src` also contains practice components (Counter, WorldList, Drill) and a small Study Tracker.
+- `my-react-app/src/practice` holds my small React practice components (Counter, WorldList, Drill). `App.jsx` also has a small Study Tracker.

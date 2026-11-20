@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import SessionItem from "./SessionItem.jsx";
 import Reviews from "./Reviews.jsx";
-import Greeting from "./Practice.jsx";
-import Counter from "./Counter.jsx";
-import WorldList from "./WorldList";
-import Counter2 from "./Counter2";
-import Drill2 from "./Drill2";
-import Drill3 from "./Drill3";
-import Counter3 from "./Counter3.jsx";
+import Greeting from "./practice/Practice.jsx";
+import Counter from "./practice/Counter.jsx";
+import WorldList from "./practice/WorldList";
+import Counter2 from "./practice/Counter2";
+import Drill2 from "./practice/Drill2";
+import Drill3 from "./practice/Drill3";
+import Counter3 from "./practice/Counter3.jsx";
 
 
 
